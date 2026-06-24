@@ -1,0 +1,136 @@
+---
+layout: default
+title: Mohammed Tasfiq — Portfolio
+---
+
+<!-- ===== Hero ===== -->
+<section class="hero" id="hero">
+  <div class="container">
+    <p class="eyebrow">Hi, my name is</p>
+    <h1 class="hero-name">Fazle Mohammed Tasfiq.</h1>
+    <h2 class="hero-sub">{{ site.tagline }}</h2>
+    <p class="hero-text">
+      I'm a Computer Science &amp; Engineering undergraduate at BRAC University.
+      I enjoy building software end-to-end — from Laravel/Vue backends to neural
+      networks for NLP — and I'm currently exploring Deep Learning, NLP, and RAG
+      through my undergraduate thesis.
+    </p>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="#projects">View my work</a>
+      <a class="btn btn-ghost" href="#contact">Get in touch</a>
+      {% if site.resume != "" %}<a class="btn btn-ghost" href="{{ site.resume }}">Résumé</a>{% endif %}
+    </div>
+  </div>
+</section>
+
+<!-- ===== About ===== -->
+<section class="section" id="about">
+  <div class="container">
+    <h2 class="section-title"><span class="num">01.</span> About Me</h2>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>
+          Hello! I'm Fazle Mohammed Tasfiq, a Computer Science &amp; Engineering
+          undergraduate at BRAC University in Dhaka, Bangladesh. I like working
+          across the stack — designing backend logic and APIs as well as training
+          machine learning and deep learning models.
+        </p>
+        <p>
+          I have a keen interest in Neural Networks and their variants, with a
+          particular focus on Deep Learning and Natural Language Processing. My
+          ongoing undergraduate thesis centers on Retrieval-Augmented Generation
+          (RAG). Through academic projects I've also developed a strong interest
+          in backend development.
+        </p>
+        <p>Here are a few technologies I've been working with recently:</p>
+        <ul class="tech-list">
+          {% for group in site.data.skills %}{% for item in group.items %}<li>{{ item }}</li>{% endfor %}{% endfor %}
+        </ul>
+      </div>
+      <div class="about-card">
+        <div class="avatar">FT</div>
+        <p class="about-card-name">Fazle Mohammed Tasfiq</p>
+        <p class="about-card-role">{{ site.tagline }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Education ===== -->
+<section class="section" id="education">
+  <div class="container">
+    <h2 class="section-title"><span class="num">02.</span> Education</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>B.Sc. in Computer Science &amp; Engineering</h3>
+          <p class="timeline-meta">BRAC University, Dhaka · Sept. 2022 – Present</p>
+          <p>Currently in my 12th semester. Undergraduate thesis focused on
+             Retrieval-Augmented Generation (RAG), with coursework and projects
+             spanning machine learning, NLP, databases, and full-stack web
+             development.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Projects ===== -->
+<section class="section" id="projects">
+  <div class="container">
+    <h2 class="section-title"><span class="num">03.</span> Projects</h2>
+    <div class="projects-grid">
+      {% for project in site.data.projects %}
+      <article class="project-card">
+        <div class="project-top">
+          <span class="folder">📁</span>
+          {% if project.link %}<a class="project-link" href="{{ project.link }}" aria-label="Open project" target="_blank" rel="noopener">↗</a>{% endif %}
+        </div>
+        <h3 class="project-name">
+          {% if project.link %}<a href="{{ project.link }}" target="_blank" rel="noopener">{{ project.name }}</a>{% else %}{{ project.name }}{% endif %}
+        </h3>
+        <p class="project-desc">{{ project.description }}</p>
+        <ul class="project-tags">
+          {% for tag in project.tags %}<li>{{ tag }}</li>{% endfor %}
+        </ul>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- ===== Skills ===== -->
+<section class="section" id="skills">
+  <div class="container">
+    <h2 class="section-title"><span class="num">04.</span> Skills</h2>
+    <div class="skills">
+      {% for group in site.data.skills %}
+      <div class="skill-group">
+        <h3>{{ group.group }}</h3>
+        <ul>
+          {% for item in group.items %}<li>{{ item }}</li>{% endfor %}
+        </ul>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- ===== Contact ===== -->
+<section class="section section-contact" id="contact">
+  <div class="container container-narrow">
+    <h2 class="section-title centered"><span class="num">05.</span> Get In Touch</h2>
+    <p class="contact-text">
+      I'm currently open to new opportunities and collaborations. Whether you
+      have a question or just want to say hi, my inbox is always open!
+    </p>
+    <a class="btn btn-primary btn-lg" href="mailto:{{ site.email }}">Say Hello</a>
+    <div class="socials">
+      {% if site.github != "" %}<a href="https://github.com/{{ site.github }}" target="_blank" rel="noopener">GitHub</a>{% endif %}
+      {% if site.linkedin != "" %}<a href="https://www.linkedin.com/in/{{ site.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>{% endif %}
+      {% if site.twitter != "" %}<a href="https://twitter.com/{{ site.twitter }}" target="_blank" rel="noopener">Twitter</a>{% endif %}
+      {% if site.scholar != "" %}<a href="{{ site.scholar }}" target="_blank" rel="noopener">Scholar</a>{% endif %}
+    </div>
+  </div>
+</section>

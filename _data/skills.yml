@@ -1,0 +1,15 @@
+# Group your skills however you like. Each group renders as a labeled row.
+- group: Languages
+  items: [Python, PHP, TypeScript, Java, "SQL (PostgreSQL, MySQL)", HTML/CSS]
+
+- group: Frameworks
+  items: [Laravel, Vue.js, TailwindCSS]
+
+- group: Libraries
+  items: [Scikit-learn, Keras, Pandas, NumPy, Matplotlib, NLTK]
+
+- group: Developer Tools
+  items: [Git, Docker, Postman, Google Colab, VS Code, PyCharm]
+
+- group: Interests
+  items: [Deep Learning, NLP, RAG, Neural Networks, Backend Development]

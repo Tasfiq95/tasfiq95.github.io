@@ -1,0 +1,38 @@
+# Add or edit your projects here — each block becomes a card on the site.
+- name: Academic Subject Classification on QA Texts
+  description: >-
+    An NLP pipeline classifying 280,000+ question-answer pairs into academic
+    domains to improve information retrieval. Benchmarked a Random Forest
+    (BoW/TF-IDF) baseline against RNN, LSTM and Bi-LSTM models with GloVe and
+    custom Skip-gram Word2Vec embeddings — Bi-GRU topped out at 72.44% accuracy.
+  tags: [Python, Keras, Scikit-learn, NLP, Deep Learning]
+  link: https://github.com/Tasfiq95
+  featured: true
+
+- name: HelpRelief — Disaster & Resource Coordination
+  description: >-
+    A role-based platform for Volunteers and NGOs to coordinate disaster
+    response. Built a dynamic Vue.js + TailwindCSS dashboard, a Laravel volunteer
+    task interface with real-time status updates, an interactive resource map,
+    and PostgreSQL/Eloquent reporting with tested RESTful APIs.
+  tags: [Vue.js, Laravel, PostgreSQL, TailwindCSS, REST API]
+  link: https://github.com/Tasfiq95
+  featured: true
+
+- name: Water Potability Prediction
+  description: >-
+    A classifier detecting potable water from 3,000+ samples. Used median
+    imputation, SMOTE class balancing, RobustScaler and stratified splitting;
+    benchmarked Decision Tree and Naive Bayes, with KNN best at 71% recall.
+  tags: [Python, Scikit-learn, Machine Learning]
+  link: https://github.com/Tasfiq95
+  featured: false
+
+- name: PickPaw — Pet Adoption Website
+  description: >-
+    A pet adoption platform where I built the PHP backend for sorting and
+    keyword-based filtering of pet listings, pet profile pages, and conditional
+    adoption/vaccination actions gated on login and pet status.
+  tags: [PHP, MySQL, HTML, CSS]
+  link: https://github.com/Tasfiq95
+  featured: false

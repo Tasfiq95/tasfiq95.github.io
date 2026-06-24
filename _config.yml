@@ -1,0 +1,30 @@
+# Site settings — edit these to personalize your portfolio
+title: Fazle Mohammed Tasfiq
+tagline: CSE Undergraduate · Deep Learning, NLP & Backend Development
+description: >-
+  Portfolio of Fazle Mohammed Tasfiq — Computer Science & Engineering
+  undergraduate at BRAC University, interested in Neural Networks, NLP, RAG,
+  and backend development.
+email: mohammad.tasfiq@gmail.com
+url: "https://tasfiq95.github.io"
+baseurl: ""
+
+# Social / contact links (leave blank to hide)
+github: Tasfiq95
+linkedin: ""        # e.g. fazle-mohammed-tasfiq
+twitter: ""         # e.g. mtasfiq (without @)
+scholar: ""         # Google Scholar profile URL
+resume: ""          # e.g. /assets/resume.pdf
+phone: "+8801316982030"
+location: "Dhaka, Bangladesh"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# Files Jekyll should ignore
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
