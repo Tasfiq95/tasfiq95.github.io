@@ -1,0 +1,7 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+body {
+  font-family: 'IBM Plex Mono', monospace;
+  @apply bg-white dark:bg-gray-900 transition-colors duration-300;
+}
