@@ -94,8 +94,8 @@ export const siteConfig = {
     {
       school: "BRAC University",
       degree: "B.Sc. in Computer Science and Engineering",
-      dateRange: "Sept 2022 - Expected Sept 2026",
-      achievements: ["CGPA: 3.78 / 4.00"],
+      dateRange: "Sept 2022 - Sept 2026",
+      achievements: ["CGPA: 3.81 / 4.00"],
     },
   ],
 };
