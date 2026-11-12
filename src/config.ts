@@ -75,8 +75,8 @@ export const siteConfig = {
       title: "QA (ML) Intern",
       dateRange: "Oct 2026 - Present",
       bullets: [
-        "Evaluate a domain-specific chatbot across multiple LLMs via OpenRouter and refine the model harness around them for reliability and response quality.",
-        "Built Playwright automation for repeatable, end-to-end testing of the chatbot.",
+        "Test a domain-specific chatbot across a range of LLMs, fine-tuning the model harness for reliability and response quality.",
+        "Run a series of automated end-to-end tests with Playwright.",
       ],
     },
     {
