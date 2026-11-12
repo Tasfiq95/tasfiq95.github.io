@@ -1,8 +1,8 @@
 export const siteConfig = {
   name: "Fazle Mohammed Tasfiq",
-  title: "CSE Undergraduate | Full-Stack & ML/NLP",
+  title: "CSE Graduate | Full-Stack & ML/NLP",
   description:
-    "Portfolio of Fazle Mohammed Tasfiq — CSE undergraduate building full-stack systems and ML/NLP research.",
+    "Portfolio of Fazle Mohammed Tasfiq — CSE graduate building full-stack systems and ML/NLP research.",
   accentColor: "#0d9488",
   social: {
     email: "mohammad.tasfiq@gmail.com",
@@ -10,7 +10,7 @@ export const siteConfig = {
     github: "https://github.com/Tasfiq95",
   },
   aboutMe:
-    "I'm a final-year Computer Science and Engineering student at BRAC University who likes seeing a project through, not just prototyping it. I've built full-stack platforms — payment flows, role-based dashboards, REST APIs — across Laravel/Vue and Node/Express, and I'm currently doing ongoing ML/NLP research: a multilingual RAG evaluation pipeline and a medical-image security study across several CNN architectures. Looking for internship or full-time opportunities in software, AI/ML, or research.",
+    "I'm a Computer Science and Engineering graduate from BRAC University who likes seeing a project through, not just prototyping it. I'm currently a QA (ML) Intern at Enerzyz Inc., testing and refining a domain-specific chatbot across multiple LLMs. I've built full-stack platforms — payment flows, role-based dashboards, REST APIs — across Laravel/Vue and Node/Express, and I do ML/NLP research: a multilingual RAG evaluation study (preprint on arXiv) and a medical-image security study across several CNN architectures.",
   skills: [
     "Python",
     "JavaScript/TypeScript",
@@ -29,6 +29,7 @@ export const siteConfig = {
     "ChromaDB",
     "PostgreSQL/MongoDB",
     "Docker",
+    "Playwright",
     "Git",
   ],
   projects: [
@@ -70,13 +71,24 @@ export const siteConfig = {
   ],
   experience: [
     {
+      company: "Enerzyz Inc.",
+      title: "QA (ML) Intern",
+      dateRange: "Oct 2026 - Present",
+      bullets: [
+        "Evaluate a domain-specific chatbot across multiple LLMs via OpenRouter and refine the model harness around them for reliability and response quality.",
+        "Built Playwright automation for repeatable, end-to-end testing of the chatbot.",
+      ],
+    },
+    {
       company: "Collaborative Undergraduate Thesis, BRAC University",
       title: "RAG Evaluation for Multilingual QA — Tamil Track",
-      dateRange: "Jul 2025 - Present",
+      dateRange: "Jul 2025 - Apr 2026",
+      link: "https://arxiv.org/abs/2610.20419",
+      linkLabel: "Read the preprint on arXiv",
       bullets: [
         "Built the web-scraping, dataset-curation, and LLM-based QA-generation pipeline for the Tamil track of a 5-language (Tamil, Bengali, Hindi, Nepali, Urdu) multilingual RAG benchmark, working across the shared pipeline design with the team.",
         "Evaluated 4 LLMs on direct question answering, then built and evaluated a RAG pipeline combining ChromaDB retrieval with those LLMs.",
-        "Publication in progress.",
+        "Preprint available on arXiv.",
       ],
     },
     {
